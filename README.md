@@ -32,9 +32,28 @@ Each test case includes:
 - Validation Testing
 - UI Testing
 
-## Tools Used
-- GitHub — Version control and project documentation
-- Microsoft Excel / CSV — Test case documentation
 
 ## Project Status
 Test cases documented. Test execution and sample bug reports will be added as the project progresses.
+
+## Test Execution Report
+
+The `est_Execution_Report.csv` file contains a structured execution report with test case IDs, modules, test scenarios, expected results, actual results, execution status, and remarks.
+
+The report demonstrates how manual test execution results can be documented and reviewed.
+
+## Test Plan
+
+The `Test_Plan.md` file documents the project overview, testing objectives, scope, testing types, test approach, test environment, entry criteria, exit criteria, and defect reporting process.
+
+## Bug Reports
+
+The `Bug_Reports.csv` file contains sample defect reports documenting bug IDs, modules, bug titles, preconditions, reproduction steps, expected results, actual results, severity, priority, and status.
+
+## Tools Used
+
+- Manual Testing
+- Google Chrome
+- CSV documentation
+- Markdown
+- GitHub for version control
