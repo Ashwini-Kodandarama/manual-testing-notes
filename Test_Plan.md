@@ -1,7 +1,7 @@
 # Manual Testing Test Plan
 
 ## 1. Project Overview
-This project focuses on manual testing of a sample e-commerce application. The objective is to verify the functionality of login, user registration, product search, product details, shopping cart, checkout, and order history.
+This project focuses on manual testing of an e-commerce web application. The objective is to verify login, user registration, product search, product details, shopping cart, checkout, and order history functionalities using positive and negative test scenarios.
 
 ## 2. Testing Objectives
 - Verify application functionality against expected results.
@@ -32,11 +32,13 @@ Test cases will be executed manually using predefined preconditions, test steps,
 
 ## 6. Test Environment
 - Testing Type: Manual Testing
-- Documentation: CSV files
-- Version Control: GitHub
+- Application Under Test: Amazon India (amazon.in)
 - Browser: Google Chrome
-- Test Data: Sample user accounts and product information
-
+- Documentation: CSV files and Markdown
+- Version Control: GitHub
+- Test Data: Test inputs and product information used during manual testing
+- Testing Approach: Manual functional testing of accessible e-commerce features
+  
 ## 7. Entry Criteria
 - Test cases are documented.
 - The test environment is accessible.
