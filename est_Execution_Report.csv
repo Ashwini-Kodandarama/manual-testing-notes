@@ -1,20 +1,21 @@
 Test Case ID,Module,Test Scenario,Expected Result,Actual Result,Status,Remarks
-TC001,Login,Verify login with valid credentials,Login should be successful,User logged in successfully,Pass,Expected behaviour observed
-TC002,Login,Verify login with incorrect password,Error message should be displayed,Login was rejected and an error message was displayed,Pass,Expected behaviour observed
-TC003,Login,Verify login with blank fields,Required field validation should appear,Required field validation was displayed,Pass,Expected behaviour observed
-TC004,Login,Verify password masking,Password should be masked,Password characters were masked,Pass,Expected behaviour observed
-TC006,Registration,Register with valid details,Account should be created successfully,Account creation confirmation displayed,Pass,Expected behaviour observed
-TC007,Registration,Submit registration with blank fields,Required field validation should appear,Required field validation displayed,Pass,Expected behaviour observed
-TC008,Registration,Enter invalid email,Email validation message should appear,Invalid email validation displayed,Pass,Expected behaviour observed
-TC009,Registration,Enter password below minimum length,Password validation should appear,Password validation displayed,Pass,Expected behaviour observed
-TC010,Registration,Enter mismatched confirm password,Password mismatch message should appear,Password mismatch validation displayed,Pass,Expected behaviour observed
-TC016,Product Search,Search for an existing product,Relevant product results should appear,Relevant product results displayed,Pass,Expected behaviour observed
-TC017,Product Search,Search for a nonexistent product,No matching products message should appear,No matching products message displayed,Pass,Expected behaviour observed
-TC018,Product Search,Submit an empty search,Application should handle empty search gracefully,Empty search handled as expected,Pass,Expected behaviour observed
-TC020,Product Search,Select a product to view details,Product details should appear,Selected product details displayed,Pass,Expected behaviour observed
-TC023,Cart,Add a product to the cart,Product should appear in cart,Product appeared in cart,Pass,Expected behaviour observed
-TC024,Cart,Increase product quantity,Quantity and subtotal should update correctly,Quantity and subtotal updated correctly,Pass,Expected behaviour observed
-TC028,Checkout,Prevent checkout with empty cart,Checkout should be blocked,Checkout was blocked as expected,Pass,Expected behaviour observed
-TC029,Checkout,Submit checkout with missing required fields,Required field validation should appear,Required field validation displayed,Pass,Expected behaviour observed
-TC030,Checkout,Enter invalid postal code,Postal code validation should appear,Postal code validation displayed,Pass,Expected behaviour observed
-TC034,Checkout,Verify checkout total,Order total should match cart total,Order total matched cart total,Pass,Expected behaviour observed
+TC001,Login,Verify login with valid credentials,Login should be successful,User is redirected to the account page after valid login,Pass,Positive scenario
+TC002,Login,Verify login with incorrect password,Error message should be displayed,Login is rejected and an error message is displayed,Pass,Negative scenario
+TC003,Login,Verify login with blank fields,Required field validation should appear,Required field validation is displayed,Pass,Input validation
+TC004,Login,Verify password masking,Password should be masked,Password characters are masked,Pass,UI validation
+TC006,Registration,Register with valid details,Account should be created successfully,Account creation confirmation is displayed,Pass,Positive scenario
+TC007,Registration,Submit registration with blank fields,Required field validation should appear,Required field validation is displayed,Pass,Negative scenario
+TC008,Registration,Enter invalid email,Email validation message should appear,Email validation is displayed,Pass,Negative scenario
+TC009,Registration,Enter password below minimum length,Password validation should appear,Password validation is displayed,Pass,Boundary validation
+TC010,Registration,Enter mismatched confirm password,Password mismatch message should appear,Password mismatch validation is displayed,Pass,Negative scenario
+TC016,Product Search,Search for an existing product,Relevant product results should appear,Relevant product results are displayed,Pass,Positive scenario
+TC017,Product Search,Search for a nonexistent product,No matching products message should appear,No matching products message is displayed,Pass,Negative scenario
+TC018,Product Search,Submit an empty search,Application should handle empty search gracefully,Empty search is handled without an unexpected error,Pass,Input validation
+TC020,Product Details,Select a product to view details,Product details should appear,Selected product details are displayed,Pass,Functional scenario
+TC023,Cart,Add a product to the cart,Product should appear in cart,Selected product appears in the cart,Pass,Functional scenario
+TC024,Cart,Increase product quantity,Quantity and subtotal should update correctly,Quantity and subtotal update after the quantity is changed,Pass,Functional scenario
+TC028,Checkout,Prevent checkout with empty cart,Checkout should be blocked,Checkout is prevented when the cart is empty,Pass,Negative scenario
+TC029,Checkout,Submit checkout with missing required fields,Required field validation should appear,Required field validation is displayed,Pass,Input validation
+TC030,Checkout,Enter invalid postal code,Postal code validation should appear,Postal code validation is displayed,Pass,Negative scenario
+TC034,Checkout,Verify checkout total,Order total should match the cart total,Displayed total matches the cart total,Pass,Calculation validation
+TC035,Order History,Verify placed order in order history,Placed order should appear correctly,Order details are displayed in order history,Pass,Functional scenario
