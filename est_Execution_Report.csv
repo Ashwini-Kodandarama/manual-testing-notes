@@ -1,0 +1,21 @@
+Test Case ID,Module,Test Scenario,Expected Result,Actual Result,Status,Remarks
+TC001,Login,Verify login with valid credentials,User should log in successfully,Not executed,Not Run,Practice test case
+TC002,Login,Verify login with incorrect password,Error message should be displayed,Not executed,Not Run,Practice test case
+TC003,Login,Verify login with blank fields,Required field validation should appear,Not executed,Not Run,Practice test case
+TC004,Login,Verify password masking,Password should be masked,Not executed,Not Run,Practice test case
+TC005,Login,Verify logout functionality,User should log out successfully,Not executed,Not Run,Practice test case
+TC006,Registration,Register with valid details,Account should be created successfully,Not executed,Not Run,Practice test case
+TC007,Registration,Submit registration with blank fields,Required field validation should appear,Not executed,Not Run,Practice test case
+TC008,Registration,Enter invalid email,Email validation message should appear,Not executed,Not Run,Practice test case
+TC009,Registration,Enter password below minimum length,Password validation should appear,Not executed,Not Run,Practice test case
+TC010,Registration,Enter mismatched confirm password,Password mismatch message should appear,Not executed,Not Run,Practice test case
+TC016,Product Search,Search for an existing product,Relevant product results should appear,Not executed,Not Run,Practice test case
+TC017,Product Search,Search for a nonexistent product,No matching products message should appear,Not executed,Not Run,Practice test case
+TC020,Product Search,Submit an empty search,Application should handle empty search gracefully,Not executed,Not Run,Practice test case
+TC023,Cart,Add a product to cart,Product should appear in cart,Not executed,Not Run,Practice test case
+TC024,Cart,Increase product quantity,Quantity and subtotal should update correctly,Not executed,Not Run,Practice test case
+TC028,Cart,Prevent checkout with empty cart,Checkout should be blocked,Not executed,Not Run,Practice test case
+TC029,Checkout,Submit checkout with missing required fields,Required field validation should appear,Not executed,Not Run,Practice test case
+TC030,Checkout,Enter invalid postal code,Postal code validation should appear,Not executed,Not Run,Practice test case
+TC034,Checkout,Verify checkout total,Order total should match the cart total,Not executed,Not Run,Practice test case
+TC035,Order History,Verify placed order in order history,Placed order should appear correctly,Not executed,Not Run,Practice test case
