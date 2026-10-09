@@ -4,3 +4,38 @@ TC002,Login,Verify login with incorrect password,A registered test account exist
 TC003,Login,Verify validation for blank fields,Login page is open,Leave email and password blank then click Login,Required field validation messages should appear,Medium,Not Run
 TC004,Login,Verify password masking,Login page is open,Type a password in the password field,Password characters should be masked,Low,Not Run
 TC005,Login,Verify logout,User is logged in,Click the Logout option,User should be logged out successfully,High,Not Run
+TC006,Registration,Register with valid details,Registration page is open,Enter valid name email and password then submit,Account should be created successfully,High,Not Run
+TC007,Registration,Submit registration with blank fields,Registration page is open,Leave all required fields blank and submit,Required field validation should appear,High,Not Run
+TC008,Registration,Enter invalid email during registration,Registration page is open,Enter malformed email and submit,Email validation message should appear,Medium,Not Run
+TC009,Registration,Enter password below minimum length,Password rules are displayed,Enter a password shorter than the required length,Password validation should appear,Medium,Not Run
+TC010,Registration,Enter mismatched confirm password,Registration form is open,Enter different password and confirm password values,Password mismatch should be displayed,Medium,Not Run
+TC011,Login,Verify login with incorrect password,Registered test account exists,Enter valid email and incorrect password then submit,Login should be rejected with an error message,High,Not Run
+TC012,Login,Verify login with unregistered email,Login page is open,Enter an unregistered test email and password,Login should be rejected safely,High,Not Run
+TC013,Login,Verify email field validation,Login page is open,Enter malformed email and valid-format password,Email validation or safe rejection should occur,Medium,Not Run
+TC014,Login,Verify password masking,Login page is open,Type a password into the password field,Password characters should be masked,Low,Not Run
+TC015,Login,Verify logout functionality,User is logged in,Click the Logout option,User should be logged out successfully,High,Not Run
+TC016,Product Search,Search for an existing product,Catalog contains a known product,Enter the product name in search and submit,Relevant product results should appear,High,Not Run
+TC017,Product Search,Search for a nonexistent product,Search page is open,Enter a product name that does not exist,No results message should appear,Medium,Not Run
+TC018,Product Search,Search with leading and trailing spaces,Catalog contains a known product,Enter the product name with surrounding spaces,Relevant results should appear,Low,Not Run
+TC019,Product Search,Search using different letter case,Catalog contains a known product,Enter the product name using different letter case,Search should handle letter case consistently,Low,Not Run
+TC020,Product Search,Submit an empty search,Search page is open,Leave search field blank and submit,Application should handle the empty search gracefully,Low,Not Run
+TC021,Product Details,Open product from search results,Search results are displayed,Click a product result,Correct product name price and details should appear,High,Not Run
+TC022,Product Details,Verify displayed product price,Product is listed in catalog,Compare product listing price with detail page price,Prices should match or explain any promotion,High,Not Run
+TC023,Cart,Add product to cart,Available product is displayed,Click Add to Cart,Product should appear in the cart,High,Not Run
+TC024,Cart,Increase product quantity,Cart contains one product,Increase quantity from one to two,Quantity and subtotal should update correctly,High,Not Run
+TC025,Cart,Decrease product quantity,Cart contains two units of a product,Decrease quantity from two to one,Quantity and subtotal should update correctly,Medium,Not Run
+TC026,Cart,Remove product from cart,Cart contains a product,Click Remove for that product,Product should disappear from the cart,High,Not Run
+TC027,Cart,Verify cart subtotal,Cart contains products with known prices,Compare subtotal with the sum of item prices multiplied by quantities,Subtotal should be calculated correctly before separate charges,High,Not Run
+TC028,Cart,Prevent checkout with empty cart,Cart is empty,Open cart and attempt checkout,Checkout should be blocked or an empty cart message shown,High,Not Run
+TC029,Checkout,Submit checkout with missing required fields,Cart contains a product,Leave required shipping fields blank and submit,Required field validation should appear,High,Not Run
+TC030,Checkout,Enter invalid postal code,Checkout form is open,Enter a postal code invalid for the test region,Validation should appear according to defined rules,Medium,Not Run
+TC031,Checkout,Place order with valid test details,Cart contains a product and test checkout is available,Enter fictional shipping details and use the approved test payment flow,Order confirmation should appear,High,Not Run
+TC032,Checkout,Handle declined test payment,Payment simulator supports a declined test outcome,Submit using the documented declined payment test,Payment failure should be displayed and order should not show as paid,High,Not Run
+TC033,Checkout,Prevent duplicate order submission,Checkout is ready to submit,Click Place Order repeatedly while processing,Duplicate orders should be prevented or handled safely,High,Not Run
+TC034,Checkout,Verify checkout total,Cart contains a product and checkout summary is shown,Compare cart total with checkout total,Totals should match after applicable charges and discounts,High,Not Run
+TC035,Order History,Verify placed order in order history,A test order was successfully placed,Open order history,The order should appear with correct reference and summary,Medium,Not Run
+TC036,Order History,Verify order status,A test order exists,Open order details and inspect status,Displayed status should match the recorded order state,Medium,Not Run
+TC037,Session,Restrict account page after logout,User is logged out,Open a protected account page directly,Authentication should be required,High,Not Run
+TC038,Usability,Navigate login form using keyboard,Login page is open,Use Tab Shift Tab and Enter to navigate,Form controls should be keyboard accessible,Low,Not Run
+TC039,Usability,Verify validation message clarity,Required-field form is open,Submit the form with a required field missing,Message should identify the field and explain correction,Low,Not Run
+TC040,Input Validation,Handle unusually long search input,Search page is open,Enter a very long search string and submit,Application should remain stable and respond safely,Medium,Not Run
