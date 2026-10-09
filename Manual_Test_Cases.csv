@@ -1,0 +1,7 @@
+Test Case ID,Module,Test Scenario,Preconditions,Test Steps,Expected Result,Priority,Execution Status
+TC001,Login,Verify login with valid credentials,A registered test account exists,Enter valid email and password then click Login,User should log in successfully,High,Not Run
+TC002,Login,Verify login with incorrect password,A registered test account exists,Enter valid email and incorrect password then click Login,An error message should appear and login should be rejected,High,Not Run
+TC003,Login,Verify validation for blank fields,Login page is open,Leave email and password blank then click Login,Required field validation messages should appear,Medium,Not Run
+TC004,Login,Verify password masking,Login page is open,Type a password in the password field,Password characters should be masked,Low,Not Run
+TC005,Login,Verify logout,User is logged in,Click the Logout option,User should be logged out successfully,High,Not Run
+a
