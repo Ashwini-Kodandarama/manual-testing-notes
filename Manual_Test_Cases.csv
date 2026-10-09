@@ -4,4 +4,3 @@ TC002,Login,Verify login with incorrect password,A registered test account exist
 TC003,Login,Verify validation for blank fields,Login page is open,Leave email and password blank then click Login,Required field validation messages should appear,Medium,Not Run
 TC004,Login,Verify password masking,Login page is open,Type a password in the password field,Password characters should be masked,Low,Not Run
 TC005,Login,Verify logout,User is logged in,Click the Logout option,User should be logged out successfully,High,Not Run
-a
